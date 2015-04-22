@@ -1,84 +1,52 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="utf-8">
-    <title>registration</title>
-    <script src="JS/report.js"></script>
-    <!-- <script src="JS/date.js"></script>-->
-
-    <link rel="stylesheet" href="CSS/main.css">
-
-</head>
-<body>
-<p>Hello!!!!! </p>
-
-<div>
-    <p class="print" align="center" ><b>Fill our registration form please.</b>
-
-    </p><br />
-</div>
-<form>
-<div class="block1" style="background:url(Images/background.jpg) no-repeat top, left;">
+<!DOCTYPE html>
+<html>
+    <head>
+      
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/grid.css">
+<!--	<link rel="stylesheet" href="../css/one/two/main.css">-->
+<!--	<script src="../js/main.js"></script>-->
+<!--			  <link rel="stylesheet" href="../css/one/two/main.css">-->
+<!--		<script src="../js/main.js"></script>-->
+		<script src="../js/api.js"></script>
+		<script src="../js/app.js"></script>
+		<script src="../js/search.js"></script>
+		<meta charset="utf-8">
+    </head>
+    <body>
 
 
-    <div>
-        <p class="txt"><b>Your name</b></p><br>
-        <input id="inp1" type="text" class="inp1" maxlength="255">
-    </div>
+		<div class="header">
+		<nav class="topmenu">
 
-    <div>
-        <p class="txt"><b>Your surname</b></p><br>
-        <input id="inp2" type="text" class="inp2" maxlength="255">
-    </div>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Registration</a>
+            <a href="admin.html">Add item</a>
 
-    <div>
-        <p class="txt"><b>Your age</b></p><br>
-        <input id="age1" type="text" class="age1" maxlength="255" style="width:150px">
-    </div>
+        </nav>
 
-    <div>
-        <select id="sel1" name="select2" style="width: 150px;
-                                            background-color:aliceblue;
-                                            outline:none;
-                                            height:30px;
-                                            margin-top:20px;
-                                            margin-left:10cm;
-                                            border-radius: 10px 10px 10px 10px;
-                                            font-size: 20px;">
-            <option selected="selected"><b>Your sex</b></option>
-            <option><b>Male</b></option>
-            <option><b>Female</b></option>
-        </select>
+			<h1 id="heading">
+				Buy. Don't be a pussy!
+			</h1>
 
-    </div>
-    <div>
-        <p class="txt"><b>Your comment</b></p><br/>
-        <textarea id="com1" name="comment" class="com1" style="outline:none;width:549px;height:210px" placeholder="Please, insert your comment here"></textarea>
-    </div>
-    <p> <button id="rep2" type="button" class="rep" style="margin-right: 50px!important; margin-left: 700px!important;">Report</button></p>
-
-</div>
-</form>
+		<label for="sorting">Sort by:</label>
+		<select class="filter" id="sorting">
+			<option value="none"></option>
+			<option value="low to high">price: from low to high</option>
+			<option value="high to low">price: from high to low</option>
+		</select>
 
 
-</p><br />
 
+		<div class="search">
+			<input type="text" placeholder="Search" id="searchInput">
+			<input type="submit" value="Go!" id="searchButton">
 
-<div>
-    <p align="center" style="font-size: 15px; color:black;margin-top: 20cm; margin-left: 44cm;">All rights reserved (c)
-        <input id=MyDate type=text readonly size="7">
-        <script>
-            var dt=new Date();
-            var month = dt.getMonth()+1;
-            if (month<10) month='0'+month;
-            var day = dt.getDate();
-            if (day<10) day='0'+day;
-            var year = dt.getFullYear();
-            MyDate.value=day+'.'+month+'.'+year;
-        </script>
-    </p>
-</div>
+		</div>
+		</div>
+		
+		<div class="grid">
+		</div>
 
-</body>
+    </body>
 </html>
